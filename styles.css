@@ -17,10 +17,6 @@ body {
   background-color: #FFF2E1;
 }
 
-html, body {
-  scroll-snap-type: y mandatory;
-}
-
 #back-to-top {
   display: flex;
   flex-direction: column;
@@ -112,7 +108,6 @@ header .header-links li:hover {
 
 section {
   height: 100vh;
-  scroll-snap-align: start;
 }
 
 .home {
@@ -120,9 +115,6 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.145) 1px, transparent 1px);
-  background-size: 10%;
-  animation: moveGradient 20s ease infinite; /* Adjust duration as needed */
 }
 .home .self-summary {
   font-size: 1.5rem;
