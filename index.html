@@ -13,13 +13,16 @@
   </head>
   <body>
     <header>
-      <ul class="header-links navbar-shadow">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li>Contact</li>
-      </ul>
+      <div class="navbar">
+        <div class="logo"><img src="./assets/maxim-logo.png"/><p>MAXIM SHTEINGARD</p></div>
+        <ul class="header-links">
+          <li><a href="#home">Home</a></li>
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>Contact</li>
+        </ul>
+      </div>
     </header>
     <a href="#home" id="back-to-top">
       <img src="./assets/arrow-up.svg" alt="back to top" />
@@ -38,12 +41,22 @@
       </div>
     </div>
     <section id="home" class="home">
-      <h1 class="title">Hey, I'm Max!</h1>
-      <p class="self-summary">I'm a software engineering student aspiring to build innovative web applications.</p>
-      <div class="button">Projects</div>
+      <img src="./assets/maxim.png" alt="Maxim Shteingard" />
+      <div class="introduction">
+        <h1 class="title">Hey, I'm Max!</h1>
+        <p class="self-summary">I'm a software engineering student aspiring to build innovative web applications.</p>
+        <p class="self-description">
+          My name is Maxim Shteingard but I usually go by Max or Maxwell. I have a lot of personal
+          experience working on different self made projects which helped develop my persona and knowledge as a
+          developer and a team player.
+          I like sharing my personal goals related to stuff that I have learned and managed to develop over the years.
+          Feel free to contact me on my Linkedin for any questions or inquieries
+        </p>
+        <div class="button">Projects</div>
+      </div>
     </section>
 
-    <section id="about">
+    <!-- <section id="about">
       <div class="about">
         <div class="about-image">
           <img src="./assets/maxim.png" alt="Maxim Shteingard" />
@@ -80,14 +93,15 @@
             <li>C & C++</li>
             <li>C#</li>
             <li>GIT</li>
-          </ul> -->
+          </ul> 
         </div>
       </div>
-    </section>
+    </section> -->
     <section id="skills">
       <div class="skills">
         <h2 class="title-secondary">SKILLS</h1>
         <div class="divider"></div>
+        <h2 class="section-description">As a student I managed to acquire skills in different programming languages along of learning the usage of different tools and frameworks involved. You can find a list of them here</h2>
         <div class="table">
           <div class="row">
             <div class="row-title">Programming Languages</div>
@@ -140,7 +154,66 @@
   <section id="projects">
     <div class="projects"><h2 class="title-secondary"> Projects</h2>
       <div class="divider"></div>
-    </div>
+      <div class="projects-list">
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/placeholder.png" alt="Project 1" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">JCE Community Project</h3>
+            <p class="project-description">As part of a parctical & education course our college has decided to part-take in helping the community and non-profit organizations in the country.
+              Me and my group has been selected to help David Yellin's College to develop a new website for the college's council of students.
+              We've developed in an interactive website for task and events management system which includes but not limitted to a calendar, task manager, event manager and a forum for students to communicate with each other.
+            </p>
+          </div>
+      </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/placeholder.png" alt="Project 2" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Linux Shell</h3>
+            <p class="project-description">In Operating System course I have developed a linux shell system which uses...</p>
+          </div>
+      </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/placeholder.png" alt="Project 3" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description"></p>
+          </div>
+      </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/placeholder.png" alt="Project 3" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description"></p>
+          </div>
+      </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/placeholder.png" alt="Project 3" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description"></p>
+          </div>
+      </div>
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/placeholder.png" alt="Project 3" />
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description"></p>
+          </div>
+      </div>
+      </div>
+      </div>
   </section>
     <section id="contact">
       <div class="contact">
@@ -155,9 +228,9 @@
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
           </section>
-          <footer>
+          <!-- <footer>
             <p>Maxim Shteingard &copy; 2024</p>
-          </footer>
+          </footer> -->
 
     <script src="main.js"></script>
   </body>
