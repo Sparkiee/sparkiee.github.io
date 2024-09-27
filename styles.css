@@ -322,6 +322,7 @@ section:not(:first-of-type) {
   display: flex;
   text-align: center;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   top: 0;
   left: 0.5rem;
