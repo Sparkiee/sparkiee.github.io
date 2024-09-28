@@ -5,6 +5,7 @@ html {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 body {
@@ -368,23 +369,26 @@ section:not(:first-of-type) {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  justify-content: space-between;
 
   .project {
     width: calc(100% / 3 - 3rem);
     border-radius: 1rem;
+    margin-bottom: 2rem;
     .project-display {
       position: relative;
-      width: 25rem;
-      border-radius: 0.5rem;
-
       display: flex;
       flex-direction: column;
+      width: 100%;
+      height: 15rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
       img {
         position: relative;
         z-index: 10;
-        width: 25rem;
         border-radius: inherit;
+        width: 100%;
+        height: 100%;
       }
       .project-skills {
         position: absolute;
@@ -399,6 +403,9 @@ section:not(:first-of-type) {
         .skill-list {
           z-index: inherit;
           gap: 1rem;
+          display: flex;
+          justify-content: space-around;
+          margin: 0 2rem;
           .skill-item {
             z-index: inherit;
             width: calc(100% / 5 - 1rem);
@@ -428,6 +435,7 @@ section:not(:first-of-type) {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  padding-bottom: 8rem;
 }
 
 .title-secondary {
@@ -444,11 +452,85 @@ section:not(:first-of-type) {
   margin: 0.5rem 0 0.8rem;
 }
 
-footer {
-  position: relative;
+.contact-form {
   display: flex;
-  justify-content: center;
-  top: -5rem;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid #EAD8C0;
+  width: 40%;
+  label {
+    font-size: 1.2rem;
+  }
+  .form-top {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    .form-item {
+      width: 50%;
+    }
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+    input,
+    textarea {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      background-color: rgba(234, 216, 192, 0.3);
+      border: 1px solid #D1BB9E;
+      transition: border-color 0.3s ease;
+      font-family: inherit;
+      &:focus {
+        outline: none;
+        border-color: #423625;
+      }
+    }
+    input {
+      height: 1.8rem;
+      padding-left: 1rem;
+    }
+    textarea {
+      padding-left: 0.5rem;
+      min-height: 5rem;
+      resize: vertical;
+      max-height: 10rem; // Adjust the max-height as needed
+    }
+  }
+
+  .required {
+    color: red;
+  }
+
+  button {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    background-color: #d1bb9e;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease-in;
+    &:hover {
+      cursor: pointer;
+      background-color: #a79277;
+      -webkit-transform: translateY(-1px);
+      transform: translateY(-0.2rem);
+    }
+  }
+}
+
+
+footer {
+  width: 100%;
+  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  bottom: 10rem;
+  padding-bottom: 3rem;
 }
 
 @media screen and (max-width: 1680px) {
@@ -505,20 +587,6 @@ footer {
       }
     }
   }
-  // .skills {
-  //   .table {
-  //     .row {
-  //       .row-title {
-  //         width: 100%;
-  //         justify-content: left;
-  //         margin-right: 0;
-  //       }
-  //       .row-list {
-  //         min-width: 100%;
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 @keyframes spin {

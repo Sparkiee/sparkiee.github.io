@@ -163,9 +163,9 @@
         <div class="projects-list">
           <div class="project">
             <div class="project-display">
-              <img src="./assets/placeholder.png" alt="Project 1" />
+              <img src="./assets/projects/community.png" alt="Project 1" />
               <div class="project-skills">
-                <h3>SKILLS USED</h3>
+                <h3>SKILLS USED IN THIS PROJECT</h3>
                 <div class="skill-list">
                   <img class="skill-item" src="./assets/icons/html5.svg" alt="html5" />
                   <img class="skill-item" src="./assets/icons/css.svg" alt="css3" />
@@ -188,9 +188,13 @@
           </div>
           <div class="project">
             <div class="project-display">
-              <img src="./assets/placeholder.png" alt="Project 1" />
+              <img src="./assets/projects/linux.png" alt="Project 1" />
               <div class="project-skills">
-                <h3>SKILLS USED</h3>
+                <h3>SKILLS USED IN THIS PROJECT</h3>
+                <div class="skill-list">
+                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                </div>
               </div>
             </div>
             <div class="project-info">
@@ -201,28 +205,64 @@
             </div>
           </div>
           <div class="project">
-            <div class="project-display"><img src="./assets/placeholder.png" alt="Project 1" /></div>
+            <div class="project-display">
+              <img src="./assets/placeholder.png" alt="Project 1" />
+              <div class="project-skills">
+                <h3>SKILLS USED IN THIS PROJECT</h3>
+                <div class="skill-list">
+                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                </div>
+              </div>
+            </div>
             <div class="project-info">
               <h3 class="project-title">Project 3</h3>
               <p class="project-description"></p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display"><img src="./assets/placeholder.png" alt="Project 1" /></div>
+            <div class="project-display">
+              <img src="./assets/placeholder.png" alt="Project 1" />
+              <div class="project-skills">
+                <h3>SKILLS USED IN THIS PROJECT</h3>
+                <div class="skill-list">
+                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                </div>
+              </div>
+            </div>
             <div class="project-info">
               <h3 class="project-title">Project 4</h3>
               <p class="project-description"></p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display"><img src="./assets/placeholder.png" alt="Project 1" /></div>
+            <div class="project-display">
+              <img src="./assets/placeholder.png" alt="Project 1" />
+              <div class="project-skills">
+                <h3>SKILLS USED IN THIS PROJECT</h3>
+                <div class="skill-list">
+                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                </div>
+              </div>
+            </div>
             <div class="project-info">
               <h3 class="project-title">Project 5</h3>
               <p class="project-description"></p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display"><img src="./assets/placeholder.png" alt="Project 1" /></div>
+            <div class="project-display">
+              <img src="./assets/placeholder.png" alt="Project 1" />
+              <div class="project-skills">
+                <h3>SKILLS USED IN THIS PROJECT</h3>
+                <div class="skill-list">
+                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                </div>
+              </div>
+            </div>
             <div class="project-info">
               <h3 class="project-title">Project 6</h3>
               <p class="project-description"></p>
@@ -235,17 +275,23 @@
       <div class="contact">
         <h2 class="title-secondary">Contact</h2>
         <div class="divider"></div>
-        <form action="submit" method="post">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+        <h2 class="section-description">
+          Feel free to reach out about business opportunities, or if you have any questions or need assistance! Just use
+          the contact form, and I'll get back to you as soon as possible.
+        </h2>
+        <form class="contact-form" action="submit" method="post">
+          <div class="form-top">
+            <div class="form-item">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-item">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required />
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
+          <div class="form-item">
+            <label for="message">Message <span class="required">*</span></label>
             <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit">Send</button>
