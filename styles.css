@@ -452,8 +452,28 @@ section:not(:first-of-type) {
 footer {
   width: 100%;
   text-align: center;
+  background-color: #A79277;
   bottom: 10rem;
-  padding-bottom: 3rem;
+  padding: 1rem 0;
+}
+footer .footer-social-links {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-social-links .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-social-links img {
+  width: 2rem;
+  max-height: 2rem;
+  padding: 0rem 0.4rem;
+  transition: transform 0.2s ease-in-out;
+}
+footer .footer-social-links img:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1680px) {
