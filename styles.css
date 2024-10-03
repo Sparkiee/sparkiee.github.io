@@ -79,22 +79,20 @@ header .navbar .logo img {
   width: 5rem;
   height: 5rem;
   transition: transform 0.5s; /* Smooth transition */
+  animation: spin-reverse 0.5s linear; /* Reset any transform applied on hover */
 }
 header .navbar .logo img:hover {
   animation: spin 0.5s linear;
 }
-header .navbar .logo img:not(:hover) {
-  animation: spin-reverse 0.5s linear; /* Reset any transform applied on hover */
-}
-header .navbar .logo p {
+header .navbar p {
   transition: color 0.2s ease, font-size 0.2s ease-in-out;
 }
-header .navbar .logo p:hover {
+header .navbar p:hover {
   cursor: default;
   color: #a79277;
   font-size: 1.4rem;
 }
-header .navbar .header-links {
+header .header-links {
   font-size: 1.5rem;
   margin-right: 5rem;
   display: flex;
@@ -102,14 +100,14 @@ header .navbar .header-links {
   gap: 2rem;
   list-style: none;
 }
-header .navbar .header-links li {
+header .header-links li {
   transition: color 0.2s linear, font-weight 0.2s linear;
 }
-header .navbar .header-links li a {
+header .header-links li a {
   text-decoration: none;
   color: inherit;
 }
-header .navbar .header-links li:hover {
+header .header-links li:hover {
   cursor: pointer;
   color: #a79277;
   font-weight: 600;
@@ -154,9 +152,10 @@ section:not(:first-of-type) {
   height: auto;
   border-radius: 50%;
   margin-bottom: 2rem;
+  transition: transform 0.2s ease-in-out;
 }
 .home img:hover {
-  animation: jump 0.4s linear;
+  transform: scale3d(1.05, 1.05, 1.05);
 }
 .home .introduction {
   width: 45%;
@@ -181,11 +180,11 @@ section:not(:first-of-type) {
 }
 .home .introduction .self-summary {
   font-size: 2rem;
-  margin: 0.4rem 0 1.5rem 0;
+  margin: 0.4rem 0 0.4rem 0;
 }
 .home .introduction .self-description {
   font-size: 1.5rem;
-  margin: 0 0 1.5rem 2.5rem;
+  margin: 1.5rem 0 1.5rem 0rem;
 }
 
 .title {
@@ -306,7 +305,7 @@ section:not(:first-of-type) {
   border-radius: 1rem;
   margin-bottom: 2rem;
 }
-.projects-list .project .project-display {
+.projects-list .project a .project-display {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -315,14 +314,14 @@ section:not(:first-of-type) {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.projects-list .project .project-display img {
+.projects-list .project a .project-display img {
   position: relative;
   z-index: 10;
   border-radius: inherit;
   width: 100%;
   height: 100%;
 }
-.projects-list .project .project-display .project-skills {
+.projects-list .project a .project-display .project-skills {
   position: absolute;
   display: flex;
   text-align: center;
@@ -333,26 +332,35 @@ section:not(:first-of-type) {
   left: 0.5rem;
   z-index: 1;
 }
-.projects-list .project .project-display .project-skills .skill-list {
+.projects-list .project a .project-display .project-skills h3 {
+  color: black;
+}
+.projects-list .project a .project-display .project-skills .skill-list {
   z-index: inherit;
   gap: 1rem;
   display: flex;
   justify-content: space-around;
   margin: 0 2rem;
 }
-.projects-list .project .project-display .project-skills .skill-list .skill-item {
+.projects-list .project a .project-display .project-skills .skill-list .skill-item {
   z-index: inherit;
   width: calc(20% - 1rem);
   opacity: 1;
 }
-.projects-list .project .project-display:hover {
-  animation: jump 0.4s linear;
-  transition: background-color 0.8s ease;
+.projects-list .project a .project-display:hover {
+  transition: background-color 0.3s ease-in;
   background-color: #ead8c0;
 }
-.projects-list .project .project-display:hover img {
-  transition: opacity 0.6s linear;
+.projects-list .project a .project-display:hover img {
+  transition: opacity 0.4s linear;
   opacity: 0;
+}
+.projects-list .project a .project-display:not(:hover) {
+  transition: background-color 0.3s ease-out;
+}
+.projects-list .project a .project-display:not(:hover) img {
+  transition: opacity 0.4s linear;
+  opacity: 1;
 }
 
 .contact {
@@ -386,7 +394,7 @@ section:not(:first-of-type) {
   flex-direction: column;
   padding: 2rem;
   border-radius: 2rem;
-  border: 1px solid #EAD8C0;
+  border: 1px solid #ead8c0;
   width: 40%;
 }
 .contact-form label {
@@ -411,7 +419,7 @@ section:not(:first-of-type) {
   padding: 0.5rem;
   border-radius: 0.5rem;
   background-color: rgba(234, 216, 192, 0.3);
-  border: 1px solid #D1BB9E;
+  border: 1px solid #d1bb9e;
   transition: border-color 0.3s ease;
   font-family: inherit;
 }
@@ -452,7 +460,7 @@ section:not(:first-of-type) {
 footer {
   width: 100%;
   text-align: center;
-  background-color: #A79277;
+  background-color: #a79277;
   bottom: 10rem;
   padding: 1rem 0;
 }

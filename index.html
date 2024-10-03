@@ -9,6 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=SUSE&display=swap" rel="stylesheet" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "aO1mJL-fLJcjsGO2I"
+        });
+      })();
+    </script>
+
     <title>Maxim Shteingard</title>
   </head>
   <body>
@@ -162,19 +171,21 @@
         <div class="divider"></div>
         <div class="projects-list">
           <div class="project">
-            <div class="project-display">
-              <img src="./assets/projects/community.png" alt="Project 1" />
-              <div class="project-skills">
-                <h3>SKILLS USED IN THIS PROJECT</h3>
-                <div class="skill-list">
-                  <img class="skill-item" src="./assets/icons/html5.svg" alt="html5" />
-                  <img class="skill-item" src="./assets/icons/css.svg" alt="css3" />
-                  <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
-                  <img class="skill-item" src="./assets/icons/react.svg" alt="react" />
-                  <img class="skill-item" src="./assets/icons/firebase.svg" alt="firebase" />
+            <a href="https://github.com/Sparkiee/jce-community-project" target="_blank">
+              <div class="project-display">
+                <img src="./assets/projects/community.png" alt="Project 1" />
+                <div class="project-skills">
+                  <h3>SKILLS USED IN THIS PROJECT</h3>
+                  <div class="skill-list">
+                    <img class="skill-item" src="./assets/icons/html5.svg" alt="html5" />
+                    <img class="skill-item" src="./assets/icons/css.svg" alt="css3" />
+                    <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
+                    <img class="skill-item" src="./assets/icons/react.svg" alt="react" />
+                    <img class="skill-item" src="./assets/icons/firebase.svg" alt="firebase" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="project-info">
               <h3 class="project-title">JCE Community Project</h3>
               <p class="project-description">
@@ -187,82 +198,95 @@
             </div>
           </div>
           <div class="project">
-            <div class="project-display">
-              <img src="./assets/projects/linux.png" alt="Project 1" />
-              <div class="project-skills">
-                <h3>SKILLS USED IN THIS PROJECT</h3>
-                <div class="skill-list">
-                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
-                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+            <a>
+              <div class="project-display">
+                <img src="./assets/projects/linux.png" alt="Project 2" />
+                <div class="project-skills">
+                  <h3>SKILLS USED IN THIS PROJECT</h3>
+                  <div class="skill-list">
+                    <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                    <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="project-info">
               <h3 class="project-title">Linux Shell</h3>
               <p class="project-description">
-                In Operating System course I have developed a linux shell system which uses...
+                In Operating System course I have developed a shell that handles multiple commands with semicolons,
+                featuring dynamic variable assignment and in-command variable usage. Managed child processes using fork
+                and execvp, ensuring secure command execution, and implemented robust command parsing for quoted
+                arguments. Laid the foundation for piped command execution for added functionality.
               </p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display">
-              <img src="./assets/placeholder.png" alt="Project 1" />
-              <div class="project-skills">
-                <h3>SKILLS USED IN THIS PROJECT</h3>
-                <div class="skill-list">
-                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
-                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+            <a>
+              <div class="project-display">
+                <img src="./assets/placeholder.png" alt="Project 1" />
+                <div class="project-skills">
+                  <h3>SKILLS USED IN THIS PROJECT</h3>
+                  <div class="skill-list">
+                    <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                    <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="project-info">
               <h3 class="project-title">Project 3</h3>
               <p class="project-description"></p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display">
-              <img src="./assets/placeholder.png" alt="Project 1" />
-              <div class="project-skills">
-                <h3>SKILLS USED IN THIS PROJECT</h3>
-                <div class="skill-list">
-                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
-                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+            <a>
+              <div class="project-display">
+                <img src="./assets/placeholder.png" alt="Project 1" />
+                <div class="project-skills">
+                  <h3>SKILLS USED IN THIS PROJECT</h3>
+                  <div class="skill-list">
+                    <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                    <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="project-info">
               <h3 class="project-title">Project 4</h3>
               <p class="project-description"></p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display">
-              <img src="./assets/placeholder.png" alt="Project 1" />
-              <div class="project-skills">
-                <h3>SKILLS USED IN THIS PROJECT</h3>
-                <div class="skill-list">
-                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
-                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+            <a>
+              <div class="project-display">
+                <img src="./assets/placeholder.png" alt="Project 1" />
+                <div class="project-skills">
+                  <h3>SKILLS USED IN THIS PROJECT</h3>
+                  <div class="skill-list">
+                    <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                    <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="project-info">
               <h3 class="project-title">Project 5</h3>
               <p class="project-description"></p>
             </div>
           </div>
           <div class="project">
-            <div class="project-display">
-              <img src="./assets/placeholder.png" alt="Project 1" />
-              <div class="project-skills">
-                <h3>SKILLS USED IN THIS PROJECT</h3>
-                <div class="skill-list">
-                  <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
-                  <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+            <a>
+              <div class="project-display">
+                <img src="./assets/placeholder.png" alt="Project 1" />
+                <div class="project-skills">
+                  <h3>SKILLS USED IN THIS PROJECT</h3>
+                  <div class="skill-list">
+                    <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                    <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div class="project-info">
               <h3 class="project-title">Project 6</h3>
               <p class="project-description"></p>
@@ -279,7 +303,7 @@
           Feel free to reach out about business opportunities, or if you have any questions or need assistance! Just use
           the contact form, and I'll get back to you as soon as possible.
         </h2>
-        <form class="contact-form" action="submit" method="post">
+        <form id="contact-form" class="contact-form" action="submit">
           <div class="form-top">
             <div class="form-item">
               <label for="name">Name <span class="required">*</span></label>
