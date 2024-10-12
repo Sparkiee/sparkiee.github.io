@@ -89,43 +89,38 @@ header {
         width: 5rem;
         height: 5rem;
         transition: transform 0.5s; /* Smooth transition */
-        &:hover {
-          animation: spin 0.5s linear;
-        }
-
-        animation: spin-reverse 0.5s linear; /* Reset any transform applied on hover */
-      }
-    }
-
-    p {
-      transition: color 0.2s ease, font-size 0.2s ease-in-out;
-      &:hover {
-        cursor: default;
-        color: #a79277;
-        font-size: 1.4rem;
       }
     }
   }
-  .header-links {
-    font-size: 1.5rem;
-    margin-right: 5rem;
-    // padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    list-style: none;
+}
 
-    li {
-      transition: color 0.2s linear, font-weight 0.2s linear;
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      &:hover {
-        cursor: pointer;
-        color: #a79277;
-        font-weight: 600;
-      }
+// p {
+//   transition: color 0.2s ease, font-size 0.2s ease-in-out;
+//   &:hover {
+//     cursor: default;
+//     color: #a79277;
+//     font-size: 1.4rem;
+//   }
+// }
+.header-links {
+  font-size: 1.5rem;
+  margin-right: 5rem;
+  // padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+
+  li {
+    transition: color 0.2s linear, font-weight 0.2s linear;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    &:hover {
+      cursor: pointer;
+      color: #a79277;
+      font-weight: 600;
     }
   }
 }
@@ -544,37 +539,24 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     .footer-social {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-    }
-    img {
-      width: 1.5rem;
-      max-height: 1.5rem;
-      padding: 0rem 0.4rem;
-      color: #333;
-      border: #333 0.15rem solid;
-      border-radius: 50%;
-      padding: 0.5rem;
-      transition: background-color 0.2s linear, border-color 0.2s linear;
-      &:hover {
-        // transform: scale(1.1);
-        background-color: #D1BB9E;
-        border-color: #EAD8C0;
+      i {
+        color: #333;
+        font-size: 2rem;
       }
     }
   }
 }
 
-@media screen and (max-width: 1680px) {
+// Media query for tablets
+@media screen and (max-width: 1024px) {
   html {
     font-size: 12px;
-  }
-  header {
-    display: none;
   }
 
   .social-links {
@@ -598,19 +580,73 @@ footer {
       width: 80%;
     }
   }
+  section {
+    width: 100%;
+    div {
+      width: 80%;
+    }
+    .skills {
+      .table {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+        .row {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .row-title {
+            width: 100%;
+            justify-content: center;
+            margin-right: 0;
+          }
+          .row-list {
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 
+  .contact-form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+
+    .form-top,
+    .form-item {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}
+
+// Media query for smaller devices (e.g. phones)
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .home {
+    .introduction {
+      width: 80%;
+    }
+  }
+  .about {
+    .about-image {
+      width: 100%;
+    }
+    .about-info {
+      width: 100%;
+    }
+  }
   .skills {
     .table {
-      display: flex;
-      align-items: center;
-      text-align: center;
-      gap: 3rem;
       .row {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         .row-title {
           width: 100%;
           justify-content: center;
@@ -622,6 +658,9 @@ footer {
         }
       }
     }
+  }
+  .contact-form {
+    width: 80%;
   }
 }
 

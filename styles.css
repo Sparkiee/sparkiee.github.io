@@ -79,20 +79,9 @@ header .navbar .logo img {
   width: 5rem;
   height: 5rem;
   transition: transform 0.5s; /* Smooth transition */
-  animation: spin-reverse 0.5s linear; /* Reset any transform applied on hover */
 }
-header .navbar .logo img:hover {
-  animation: spin 0.5s linear;
-}
-header .navbar p {
-  transition: color 0.2s ease, font-size 0.2s ease-in-out;
-}
-header .navbar p:hover {
-  cursor: default;
-  color: #a79277;
-  font-size: 1.4rem;
-}
-header .header-links {
+
+.header-links {
   font-size: 1.5rem;
   margin-right: 5rem;
   display: flex;
@@ -100,14 +89,14 @@ header .header-links {
   gap: 2rem;
   list-style: none;
 }
-header .header-links li {
+.header-links li {
   transition: color 0.2s linear, font-weight 0.2s linear;
 }
-header .header-links li a {
+.header-links li a {
   text-decoration: none;
   color: inherit;
 }
-header .header-links li:hover {
+.header-links li:hover {
   cursor: pointer;
   color: #a79277;
   font-weight: 600;
@@ -470,7 +459,7 @@ footer .footer-social-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 footer .footer-social-links .footer-social {
   display: flex;
@@ -478,27 +467,14 @@ footer .footer-social-links .footer-social {
   justify-content: center;
   align-items: center;
 }
-footer .footer-social-links img {
-  width: 1.5rem;
-  max-height: 1.5rem;
-  padding: 0rem 0.4rem;
+footer .footer-social-links .footer-social i {
   color: #333;
-  border: #333 0.15rem solid;
-  border-radius: 50%;
-  padding: 0.5rem;
-  transition: background-color 0.2s linear, border-color 0.2s linear;
-}
-footer .footer-social-links img:hover {
-  background-color: #D1BB9E;
-  border-color: #EAD8C0;
+  font-size: 2rem;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 1024px) {
   html {
     font-size: 12px;
-  }
-  header {
-    display: none;
   }
   .social-links {
     display: none;
@@ -518,18 +494,59 @@ footer .footer-social-links img:hover {
   .about .about-info {
     width: 80%;
   }
-  .skills .table {
+  section {
+    width: 100%;
+  }
+  section div {
+    width: 80%;
+  }
+  section .skills .table {
     display: flex;
     align-items: center;
     text-align: center;
     gap: 3rem;
   }
-  .skills .table .row {
+  section .skills .table .row {
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  section .skills .table .row .row-title {
+    width: 100%;
+    justify-content: center;
+    margin-right: 0;
+  }
+  section .skills .table .row .row-list {
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .contact-form .form-top,
+  .contact-form .form-item {
+    width: 100%;
+  }
+  .contact-form button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  .home .introduction {
+    width: 80%;
+  }
+  .about .about-image {
+    width: 100%;
+  }
+  .about .about-info {
+    width: 100%;
   }
   .skills .table .row .row-title {
     width: 100%;
@@ -539,6 +556,9 @@ footer .footer-social-links img:hover {
   .skills .table .row .row-list {
     align-items: center;
     justify-content: center;
+  }
+  .contact-form {
+    width: 80%;
   }
 }
 @keyframes spin {
