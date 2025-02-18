@@ -1,254 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=SUSE&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=SUSE&display=swap" rel="stylesheet" />
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "aO1mJL-fLJcjsGO2I"
-        });
-      })();
-    </script>
-    <script src="https://kit.fontawesome.com/a465114549.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "aO1mJL-fLJcjsGO2I",
+                });
+            })();
+        </script>
+        <script src="https://kit.fontawesome.com/a465114549.js" crossorigin="anonymous"></script>
 
-    <title>Maxim Shteingard</title>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <img src="./assets/maxim-logo.png" alt="Maxim's Logo" />
-          <p>MAXIM SHTEINGARD</p>
-        </div>
-        <ul class="header-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </header>
-    <a href="#home" id="back-to-top">
-      <img src="./assets/arrow-up.svg" alt="back to top" />
-      <span>Back to top</span>
-    </a>
-    <div class="social-links">
-      <div class="social">
-        <a href="https://www.linkedin.com/in/maxim-shteingard">
-          <img src="./assets/linkedin4.svg" alt="linkedin" />
+        <title>Maxim Shteingard</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/maxim-logo.png" alt="Maxim's Logo" />
+                    <p>MAXIM SHTEINGARD</p>
+                </div>
+                <ul class="header-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <a href="#home" id="back-to-top">
+            <img src="./assets/arrow-up.svg" alt="back to top" />
+            <span>Back to top</span>
         </a>
-      </div>
-      <div class="social">
-        <a href="https://github.com/Sparkiee">
-          <img src="./assets/github2.svg" alt="github" />
-        </a>
-      </div>
-    </div>
-    <section id="home" class="home">
-      <img src="./assets/maxim.png" alt="Maxim Shteingard" />
-      <div class="introduction">
-        <h1 class="title">Hey, I'm Max!</h1>
-        <p class="self-summary">I'm a software engineering student aspiring to build innovative web applications.</p>
-        <p class="self-description">
-          My name is Maxim Shteingard but I usually go by Max or Maxwell. I have a lot of personal experience working on
-          different self made projects which helped develop my persona and knowledge as a developer and a team player. I
-          like sharing my personal goals related to stuff that I have learned and managed to develop over the years.
-          Feel free to contact me on my Linkedin for any questions or inquiries.
-        </p>
-        <div class="button">Projects</div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="skills">
-        <h2 class="title-secondary">SKILLS</h2>
-        <div class="divider"></div>
-        <h2 class="section-description">
-          As a student I managed to acquire skills in different programming languages along with learning the usage of
-          different tools and frameworks involved. You can find a list of them here
-        </h2>
-        <div class="table">
-          <div class="row">
-            <div class="row-title">Programming Languages</div>
-            <div class="row-list">
-              <div class="row-list-item">
-                <img src="./assets/icons/html5.svg" alt="html5" />
-                <p>HTML</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/css.svg" alt="css3" />
-                <p>CSS</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/javascript.svg" alt="javascript" />
-                <p>JS</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/python.svg" alt="python" />
-                <p>Python</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/java.svg" alt="java" />
-                <p>Java</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/C.svg" alt="c" />
-                <p>C</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/C++.svg" alt="c plus plus" />
-                <p>C++</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/csharp.svg" alt="csharp" />
-                <p>C#</p>
-              </div>
+        <div class="social-links">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/maxim-shteingard">
+                    <img src="./assets/linkedin4.svg" alt="linkedin" />
+                </a>
             </div>
-          </div>
-          <div class="row">
-            <div class="row-title">Frameworks</div>
-            <div class="row-list">
-              <div class="row-list-item">
-                <img src="./assets/icons/react.svg" alt="react" />
-                <p>React</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/firebase.svg" alt="firebase" />
-                <p>Firebase</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/nodejs.svg" alt="nodejs" />
-                <p>NodeJS</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/express.svg" alt="express" />
-                <p>Express</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/jquery.svg" alt="jquery" />
-                <p>jQuery</p>
-              </div>
+            <div class="social">
+                <a href="https://github.com/Sparkiee">
+                    <img src="./assets/github2.svg" alt="github" />
+                </a>
             </div>
-          </div>
-          <div class="row">
-            <div class="row-title">Tools</div>
-            <div class="row-list">
-              <div class="row-list-item">
-                <img src="./assets/icons/gitHub.svg" alt="github" />
-                <p>Github</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/icons8-git.svg" alt="git" />
-                <p>Git</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/wireshark.svg" alt="wireshark" />
-                <p>Wireshark</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/postman.svg" alt="postman" />
-                <p>Postman</p>
-              </div>
-              <div class="row-list-item">
-                <img src="./assets/icons/vmware.svg" alt="vmware" />
-                <p>VMware</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <section id="projects">
-      <div class="projects">
-        <h2 class="title-secondary">Projects</h2>
-        <div class="divider"></div>
-        <div class="projects-list">
-          <div class="project">
-            <a href="https://github.com/Sparkiee/jce-community-project" target="_blank">
-              <div class="project-display">
-                <img src="./assets/projects/community.png" alt="Project 1" />
-                <div class="project-skills">
-                  <h3>SKILLS USED IN THIS PROJECT</h3>
-                  <div class="skill-list">
-                    <img class="skill-item" src="./assets/icons/html5.svg" alt="html5" />
-                    <img class="skill-item" src="./assets/icons/css.svg" alt="css3" />
-                    <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
-                    <img class="skill-item" src="./assets/icons/react.svg" alt="react" />
-                    <img class="skill-item" src="./assets/icons/firebase.svg" alt="firebase" />
-                  </div>
-                </div>
-              </div>
-            </a>
-            <div class="project-info">
-              <h3 class="project-title">JCE Community Project</h3>
-              <p class="project-description">
-                As part of a practical & education course our college has decided to part-take in helping the community
-                and non-profit organizations in the country. Me and my group has been selected to help David Yellin's
-                College to develop a new website for the college's council of students. We've developed an interactive
-                website for task and events management system which includes but not limited to a calendar, task
-                manager, event manager and a forum for students to communicate with each other.
-              </p>
+        <section id="home" class="home">
+            <img src="./assets/maxim.png" alt="Maxim Shteingard" />
+            <div class="introduction">
+                <h1 class="title">Hey, I'm Max!</h1>
+                <p class="self-summary">
+                    I'm a software engineering student aspiring to build innovative web applications.
+                </p>
+                <p class="self-description">
+                    My name is Maxim Shteingard but I usually go by Max or Maxwell. I have a lot of personal experience
+                    working on different self made projects which helped develop my persona and knowledge as a developer
+                    and a team player. I like sharing my personal goals related to stuff that I have learned and managed
+                    to develop over the years. Feel free to contact me on my Linkedin for any questions or inquiries.
+                </p>
+                <div class="button">Projects</div>
             </div>
-          </div>
-          <div class="project">
-            <a>
-              <div class="project-display">
-                <img src="./assets/projects/linux.png" alt="Project 2" />
-                <div class="project-skills">
-                  <h3>SKILLS USED IN THIS PROJECT</h3>
-                  <div class="skill-list">
-                    <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
-                    <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
-                    <img class="skill-item" src="./assets/icons/linux.svg" alt="linux" />
-                  </div>
+        </section>
+
+        <section id="skills">
+            <div class="skills">
+                <h2 class="title-secondary">SKILLS</h2>
+                <div class="divider"></div>
+                <h2 class="section-description">
+                    As a student I managed to acquire skills in different programming languages along with learning the
+                    usage of different tools and frameworks involved. You can find a list of them here
+                </h2>
+                <div class="table">
+                    <div class="row">
+                        <div class="row-title">Programming Languages</div>
+                        <div class="row-list">
+                            <div class="row-list-item">
+                                <img src="./assets/icons/html5.svg" alt="html5" />
+                                <p>HTML</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/css.svg" alt="css3" />
+                                <p>CSS</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/javascript.svg" alt="javascript" />
+                                <p>JS</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/python.svg" alt="python" />
+                                <p>Python</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/java.svg" alt="java" />
+                                <p>Java</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/C.svg" alt="c" />
+                                <p>C</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/C++.svg" alt="c plus plus" />
+                                <p>C++</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/csharp.svg" alt="csharp" />
+                                <p>C#</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Frameworks</div>
+                        <div class="row-list">
+                            <div class="row-list-item">
+                                <img src="./assets/icons/react.svg" alt="react" />
+                                <p>React</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/firebase.svg" alt="firebase" />
+                                <p>Firebase</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/nodejs.svg" alt="nodejs" />
+                                <p>NodeJS</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/express.svg" alt="express" />
+                                <p>Express</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/jquery.svg" alt="jquery" />
+                                <p>jQuery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-title">Tools</div>
+                        <div class="row-list">
+                            <div class="row-list-item">
+                                <img src="./assets/icons/gitHub.svg" alt="github" />
+                                <p>Github</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/icons8-git.svg" alt="git" />
+                                <p>Git</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/wireshark.svg" alt="wireshark" />
+                                <p>Wireshark</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/postman.svg" alt="postman" />
+                                <p>Postman</p>
+                            </div>
+                            <div class="row-list-item">
+                                <img src="./assets/icons/vmware.svg" alt="vmware" />
+                                <p>VMware</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </a>
-            <div class="project-info">
-              <h3 class="project-title">Linux Shell</h3>
-              <p class="project-description">
-                In Operating System course I have developed a shell that handles multiple commands with semicolons,
-                featuring dynamic variable assignment and in-command variable usage. Managed child processes using fork
-                and execvp, ensuring secure command execution, and implemented robust command parsing for quoted
-                arguments. Laid the foundation for piped command execution for added functionality.
-              </p>
             </div>
-          </div>
-          <div class="project">
-            <a>
-              <div class="project-display">
-                <img src="/assets/projects/mongo.jpeg" alt="Project 1" />
-                <div class="project-skills">
-                  <h3>SKILLS USED IN THIS PROJECT</h3>
-                  <div class="skill-list">
-                    <img class="skill-item" src="./assets/icons/html5.svg" alt="html" />
-                    <img class="skill-item" src="./assets/icons/css.svg" alt="css" />
-                    <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
-                    <img class="skill-item" src="./assets/icons/mongodb.svg" alt="mongodb" />
-                  </div>
-                </div>
-              </div>
-            </a>
-            <div class="project-info">
-              <h3 class="project-title">Client - Server & MongoDB</h3>
-              <p class="project-description">
-                This project is a client-server application that utilizes MongoDB for data management. It allows users
-                to create and manage projects, add collaborators, and store associated assets like images. The
-                client-side scripts are designed to interact with the MongoDB database, facilitating data retrieval and
-                updates efficiently. The application employs AJAX calls to the Unsplash API for dynamic image
-                integration.
-              </p>
-            </div>
-          </div>
-          <div class="project">
+        </section>
+        <section id="projects">
+            <div class="projects">
+                <h2 class="title-secondary">Projects</h2>
+                <div class="divider"></div>
+                <div class="projects-list">
+                    <div class="project">
+                        <a href="https://github.com/Sparkiee/jce-community-project" target="_blank">
+                            <div class="project-display">
+                                <img src="./assets/projects/community.png" alt="Project 1" />
+                                <div class="project-skills">
+                                    <h3>SKILLS USED IN THIS PROJECT</h3>
+                                    <div class="skill-list">
+                                        <img class="skill-item" src="./assets/icons/html5.svg" alt="html5" />
+                                        <img class="skill-item" src="./assets/icons/css.svg" alt="css3" />
+                                        <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
+                                        <img class="skill-item" src="./assets/icons/react.svg" alt="react" />
+                                        <img class="skill-item" src="./assets/icons/firebase.svg" alt="firebase" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">JCE Community Project</h3>
+                            <p class="project-description">
+                                As part of a practical & education course our college has decided to part-take in
+                                helping the community and non-profit organizations in the country. Me and my group has
+                                been selected to help David Yellin's College to develop a new website for the college's
+                                council of students. We've developed an interactive website for task and events
+                                management system which includes but not limited to a calendar, task manager, event
+                                manager and a forum for students to communicate with each other.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <a>
+                            <div class="project-display">
+                                <img src="./assets/projects/final.jpeg" alt="Project 1" />
+                                <div class="project-skills">
+                                    <h3>SKILLS USED IN THIS PROJECT</h3>
+                                    <div class="skill-list">
+                                        <img class="skill-item" src="./assets/icons/html5.svg" alt="html" />
+                                        <img class="skill-item" src="./assets/icons/css.svg" alt="css" />
+                                        <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
+                                        <img class="skill-item" src="./assets/icons/nodejs.svg" alt="nodejs" />
+                                        <img class="skill-item" src="./assets/icons/mongodb.svg" alt="mongodb" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">Project Management Project</h3>
+                            <p class="project-description">
+                                As part of our final engineering project, my partner and I are developing a
+                                comprehensive project management platform tailored for our college. This system is
+                                designed to streamline the entire project lifecycle, allowing students, advisors, and
+                                coordinators to efficiently manage and track projects. Our goal is to create an
+                                intuitive and scalable solution that enhances collaboration, simplifies administrative
+                                tasks, and ensures transparency throughout the project process.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <a>
+                            <div class="project-display">
+                                <img src="./assets/projects/linux.png" alt="Project 2" />
+                                <div class="project-skills">
+                                    <h3>SKILLS USED IN THIS PROJECT</h3>
+                                    <div class="skill-list">
+                                        <img class="skill-item" src="./assets/icons/C.svg" alt="c" />
+                                        <img class="skill-item" src="./assets/icons/vmware.svg" alt="vmware" />
+                                        <img class="skill-item" src="./assets/icons/linux.svg" alt="linux" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">Linux Shell</h3>
+                            <p class="project-description">
+                                In Operating System course I have developed a shell that handles multiple commands with
+                                semicolons, featuring dynamic variable assignment and in-command variable usage. Managed
+                                child processes using fork and execvp, ensuring secure command execution, and
+                                implemented robust command parsing for quoted arguments. Laid the foundation for piped
+                                command execution for added functionality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <a>
+                            <div class="project-display">
+                                <img src="/assets/projects/mongo.jpeg" alt="Project 1" />
+                                <div class="project-skills">
+                                    <h3>SKILLS USED IN THIS PROJECT</h3>
+                                    <div class="skill-list">
+                                        <img class="skill-item" src="./assets/icons/html5.svg" alt="html" />
+                                        <img class="skill-item" src="./assets/icons/css.svg" alt="css" />
+                                        <img class="skill-item" src="./assets/icons/javascript.svg" alt="javascript" />
+                                        <img class="skill-item" src="./assets/icons/mongodb.svg" alt="mongodb" />
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">Client - Server & MongoDB</h3>
+                            <p class="project-description">
+                                This project is a client-server application that utilizes MongoDB for data management.
+                                It allows users to create and manage projects, add collaborators, and store associated
+                                assets like images. The client-side scripts are designed to interact with the MongoDB
+                                database, facilitating data retrieval and updates efficiently. The application employs
+                                AJAX calls to the Unsplash API for dynamic image integration.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project">
             <a>
               <div class="project-display">
                 <img src="./assets/placeholder.png" alt="Project 1" />
@@ -301,58 +334,51 @@
               <h3 class="project-title">Project 6</h3>
               <p class="project-description"></p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="contact">
-        <h2 class="title-secondary">Contact</h2>
-        <div class="divider"></div>
-        <h2 class="section-description">
-          Feel free to reach out about business opportunities, or if you have any questions or need assistance! Just use
-          the contact form, and I'll get back to you as soon as possible.
-        </h2>
-        <form id="contact-form" class="contact-form" action="submit">
-          <div class="form-top">
-            <div class="form-item">
-              <label for="name">Name <span class="required">*</span></label>
-              <input type="text" id="name" name="name" required />
+          </div> -->
+                </div>
             </div>
-            <div class="form-item">
-              <label for="email">Email <span class="required">*</span></label>
-              <input type="email" id="email" name="email" required />
+        </section>
+        <section id="contact">
+            <div class="contact">
+                <h2 class="title-secondary">Contact</h2>
+                <div class="divider"></div>
+                <h2 class="section-description">
+                    Feel free to reach out about business opportunities, or if you have any questions or need
+                    assistance! Just use the contact form, and I'll get back to you as soon as possible.
+                </h2>
+                <form id="contact-form" class="contact-form" action="submit">
+                    <div class="form-top">
+                        <div class="form-item">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
             </div>
-          </div>
-          <div class="form-item">
-            <label for="message">Message <span class="required">*</span></label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </section>
-    <footer>
-      <h3>Let's connect through social</h3>
-      <!-- <div class="social-links"> -->
-      <!-- <div class="social">
-          <a href="https://www.linkedin.com/in/maxim-shteingard">
-            <img src="./assets/linkedin4.svg" alt="linkedin" />
-          </a>
-        </div> -->
-      <div class="footer-social-links">
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/maxim-shteingard">
-            <i class="fa-brands fa-linkedin"></i> </a>
-        </div>
-        <div class="footer-social">
-          <a href="https://github.com/Sparkiee">
-            <i class="fa-brands fa-square-github"></i>
-          </a>
-        </div>
-      </div>
-      <p>&copy; 2024 Maxim Shteingard - All Rights Reserved</p>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+        </section>
+        <footer>
+            <h3>Let's connect through social</h3>
+            <div class="footer-social-links">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/maxim-shteingard"> <i class="fa-brands fa-linkedin"></i> </a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Sparkiee">
+                        <i class="fa-brands fa-square-github"></i>
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2025 Maxim Shteingard - All Rights Reserved</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
 </html>
