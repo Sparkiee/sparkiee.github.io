@@ -24,6 +24,8 @@ body {
 //   scroll-snap-type: y mandatory;
 // }
 
+
+
 #back-to-top {
   display: flex;
   flex-direction: column;
@@ -152,7 +154,7 @@ section:not(:first-of-type) {
   // scroll-snap-align: start;
 }
 
-.home {
+.about-me {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -201,6 +203,19 @@ section:not(:first-of-type) {
     .self-description {
       font-size: 1.5rem;
       margin: 1.5rem 0 1.5rem 0rem;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+      a {
+        text-decoration: none;
+        .button {
+          width: fit-content;
+        }
+      }
     }
   }
 }
@@ -627,42 +642,85 @@ footer {
 }
 
 // Media query for smaller devices (e.g. phones)
-@media screen and (max-width: 768px) {
+/* Extra small devices (phones <480px) */
+@media screen and (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 9px; /* smaller base font */
   }
-  .home {
+
+  header {
+    .navbar {
+      // flex-direction: column;
+      // align-items: center;
+      // padding: 1rem;
+      visibility: hidden;
+      background-color: #d1bb9e;
+    }
+  }
+
+  .logo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .header-links {
+    margin: 1rem 0 0 0;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .about-me {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+
+    img {
+      width: 60%;
+      max-width: 20rem;
+      margin-bottom: 1rem;
+    }
+
     .introduction {
-      width: 80%;
+      width: 100%;
+      align-items: center;
     }
   }
-  .about {
-    .about-image {
-      width: 100%;
-    }
-    .about-info {
-      width: 100%;
-    }
-  }
+
   .skills {
     .table {
       .row {
-        .row-title {
-          width: 100%;
-          justify-content: center;
-          margin-right: 0;
-        }
-        .row-list {
-          align-items: center;
-          justify-content: center;
-        }
+        flex-direction: column;
+        align-items: center;
+      }
+      .row-title {
+        margin-bottom: 0.5rem;
+        text-align: center;
       }
     }
   }
+
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+
+    .project {
+      width: 90%;
+    }
+  }
+
   .contact-form {
-    width: 80%;
+    width: 95%;
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
+
 
 @keyframes spin {
   from {

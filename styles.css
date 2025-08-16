@@ -128,7 +128,7 @@ section:not(:first-of-type) {
   padding-top: 8rem;
 }
 
-.home {
+.about-me {
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -136,22 +136,22 @@ section:not(:first-of-type) {
   justify-content: center;
   align-items: center;
 }
-.home img {
+.about-me img {
   width: 40rem;
   height: auto;
   border-radius: 50%;
   margin-bottom: 2rem;
   transition: transform 0.2s ease-in-out;
 }
-.home img:hover {
+.about-me img:hover {
   transform: scale3d(1.05, 1.05, 1.05);
 }
-.home .introduction {
+.about-me .introduction {
   width: 45%;
   display: flex;
   flex-direction: column;
 }
-.home .introduction .button {
+.about-me .introduction .button {
   width: 5rem;
   text-align: center;
   padding: 1rem 2rem;
@@ -162,18 +162,31 @@ section:not(:first-of-type) {
   border-radius: 0.5rem;
   transition: background-color 0.3s ease, transform 0.2s ease-in;
 }
-.home .introduction .button:hover {
+.about-me .introduction .button:hover {
   cursor: pointer;
   background-color: #a79277;
   transform: translateY(-0.2rem);
 }
-.home .introduction .self-summary {
+.about-me .introduction .self-summary {
   font-size: 2rem;
   margin: 0.4rem 0 0.4rem 0;
 }
-.home .introduction .self-description {
+.about-me .introduction .self-description {
   font-size: 1.5rem;
   margin: 1.5rem 0 1.5rem 0rem;
+}
+.about-me .introduction .quick-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.about-me .introduction .quick-links a {
+  text-decoration: none;
+}
+.about-me .introduction .quick-links a .button {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .title {
@@ -535,30 +548,62 @@ footer .footer-social-links .footer-social i {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
+/* Extra small devices (phones <480px) */
+@media screen and (max-width: 480px) {
   html {
-    font-size: 10px;
+    font-size: 9px; /* smaller base font */
   }
-  .home .introduction {
-    width: 80%;
+  header .navbar {
+    visibility: hidden;
+    background-color: #d1bb9e;
   }
-  .about .about-image {
+  .logo {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .header-links {
+    margin: 1rem 0 0 0;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+  }
+  .about-me {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+  .about-me img {
+    width: 60%;
+    max-width: 20rem;
+    margin-bottom: 1rem;
+  }
+  .about-me .introduction {
     width: 100%;
-  }
-  .about .about-info {
-    width: 100%;
-  }
-  .skills .table .row .row-title {
-    width: 100%;
-    justify-content: center;
-    margin-right: 0;
-  }
-  .skills .table .row .row-list {
     align-items: center;
-    justify-content: center;
+  }
+  .skills .table .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills .table .row-title {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-list .project {
+    width: 90%;
   }
   .contact-form {
-    width: 80%;
+    width: 95%;
+    padding: 1rem;
+  }
+  footer {
+    font-size: 1rem;
+    padding: 1rem;
   }
 }
 @keyframes spin {

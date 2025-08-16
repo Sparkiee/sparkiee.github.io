@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       message: document.getElementById("message").value
     };
 
-    emailjs.send("service_qzedygh", "template_bwb60hj", params).then(
+    emailjs.send("service_ypxn8dk", "template_bwb60hj", params).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);
       },
